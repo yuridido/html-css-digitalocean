@@ -8,11 +8,18 @@ header {
     box-shadow: rgba(3,27,78,0.1) 0px 2px 4px;
 }
 
+#testata {
+    background-color: #0160ff;
+    background-image: url('https://www.digitalocean.com/static/bg-home-hero-3-bb4b33b77274db09b969f629ad81c4d5.svg');
+    margin-top: 60px;
+}
+
+
 #barra-nav {
     background-color: #fff;
     border: none;
     color: black;
-    line-height: 70px;
+    padding-bottom: 0;
 }
 
 #barra-nav a {
@@ -20,11 +27,31 @@ header {
     font-weight: 600;
 }
 
-.y_logo {
-    height: 50px;
+#barra-nav ul a {
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
-.navbar-nav {
-    height: 70px;
-    line-height: 70px;
+.navbar-header img {
+    height: 35px;
+
+}
+
+.navbar-header a {
+    display: block;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.navbar-right button {
+    color: #006aff;
+    border: 1px solid #006aff;
+    border-radius: 5px;
+    margin-top: 14px;
+    font-weight: bold;
+}
+
+.navbar-right button:hover {
+    color: white;
+    background-color: #006aff;
 }
