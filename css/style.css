@@ -1,0 +1,30 @@
+/* GENERALE */
+
+.y_bianco {
+    background-color: #fff;
+}
+
+header {
+    box-shadow: rgba(3,27,78,0.1) 0px 2px 4px;
+}
+
+#barra-nav {
+    background-color: #fff;
+    border: none;
+    color: black;
+    line-height: 70px;
+}
+
+#barra-nav a {
+    color: black;
+    font-weight: 600;
+}
+
+.y_logo {
+    height: 50px;
+}
+
+.navbar-nav {
+    height: 70px;
+    line-height: 70px;
+}
