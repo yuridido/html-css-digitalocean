@@ -1,7 +1,10 @@
 /* GENERALE */
+body {
+    font-family: helvetica;
+}
 
 .y_bianco {
-    background-color: #fff;
+    background-color: white;
 }
 
 header {
@@ -10,11 +13,18 @@ header {
 
 #testata {
     background-color: #0160ff;
+    color: white;
     background-image: url('https://www.digitalocean.com/static/bg-home-hero-3-bb4b33b77274db09b969f629ad81c4d5.svg');
     margin-top: 60px;
 }
 
+h1 {
+    font-size: 60px;
+    font-weight: bold;
+}
 
+
+/* HEADER */
 #barra-nav {
     background-color: #fff;
     border: none;
@@ -25,6 +35,10 @@ header {
 #barra-nav a {
     color: black;
     font-weight: 600;
+}
+
+#barra-nav a:hover {
+    color: #0160ff;
 }
 
 #barra-nav ul a {
@@ -54,4 +68,26 @@ header {
 .navbar-right button:hover {
     color: white;
     background-color: #006aff;
+}
+
+h1 + p {
+    font-size: 24px;
+    font-weight: 200;
+}
+
+.y_form {
+    background-color: white;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.y_form h4 {
+    background-color: #f3f5f9;
+    margin: 0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.y_form input {
+    width: 100%;
 }
