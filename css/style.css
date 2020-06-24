@@ -33,6 +33,14 @@ header {
     padding-bottom: 50px;
 }
 
+#animazione,
+#business {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+
+
 h1 {
     font-size: 60px;
     font-weight: bold;
@@ -211,9 +219,21 @@ h2 + p {
     padding: 15px 20px;
 }
 
+.y_carosello {
+    box-shadow: rgba(3,27,78,0.1) 0px 2px 4px;
+}
 
 
-
+#business h2 {
+    font-weight: bold;
+    color: #031b4e;
+    margin-bottom: 40px;
+}
+#business h5 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #031b4e;
+}
 
 
 
