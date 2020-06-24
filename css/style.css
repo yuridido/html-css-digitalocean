@@ -7,6 +7,10 @@ body {
     background-color: white;
 }
 
+.y_grigio {
+    background-color: #f3f5f9;
+}
+
 header {
     box-shadow: rgba(3,27,78,0.1) 0px 2px 4px;
 }
@@ -15,7 +19,18 @@ header {
     background-color: #0160ff;
     color: white;
     background-image: url('https://www.digitalocean.com/static/bg-home-hero-3-bb4b33b77274db09b969f629ad81c4d5.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
     margin-top: 60px;
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+#fascia-loghi {
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 h1 {
@@ -23,6 +38,10 @@ h1 {
     font-weight: bold;
 }
 
+h2 {
+    font-size: 35px;
+    font-weight: bold;
+}
 
 /* HEADER */
 #barra-nav {
@@ -48,6 +67,7 @@ h1 {
 
 .navbar-header img {
     height: 35px;
+    margin-right: 20px;
 
 }
 
@@ -57,7 +77,7 @@ h1 {
     padding-bottom: 10px;
 }
 
-.navbar-right button {
+.y_btn-chiaro {
     color: #006aff;
     border: 1px solid #006aff;
     border-radius: 5px;
@@ -65,7 +85,7 @@ h1 {
     font-weight: bold;
 }
 
-.navbar-right button:hover {
+.y_btn-chiaro:hover {
     color: white;
     background-color: #006aff;
 }
@@ -75,19 +95,132 @@ h1 + p {
     font-weight: 200;
 }
 
-.y_form {
+/* TESTATA */
+
+.y_card {
     background-color: white;
     border-radius: 5px;
-    padding: 20px;
+    color: black;
 }
 
-.y_form h4 {
+.y_form {
+    padding: 20px;
+    font-size: 1.8rem;
+}
+
+.y_card h4 {
     background-color: #f3f5f9;
     margin: 0;
-    padding: 10px;
+    padding: 20px 10px;
     border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
 }
 
 .y_form input {
     width: 100%;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+    border: 1px solid #006aff;
+    border-radius: 5px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 16px;
+    margin-top: 10px;
+    border: 1px solid #e5e8ed;
+    border-radius: 5px;
+}
+
+.y_btn-scuro {
+    background-color: #006aff;
+    color: white;
+    border: 1px solid #006aff;
+    border-radius: 5px;
+    margin-top: 14px;
+    font-weight: bold;
+    padding: 16px;
+    font-size: 1.8rem;
+}
+
+.y_btn-scuro:hover {
+    color: white;
+}
+
+.y_card + p {
+    color: white;
+    padding: 10px;
+}
+
+/* FASCIA LOGHI */
+
+#fascia-loghi h5 {
+    color: #5b6994;
+    font-weight: bold;
+}
+
+#fascia-loghi img {
+    margin: 0 auto;
+}
+
+#fascia-loghi .row {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+#fascia-loghi a {
+    font-weight: bold;
+    color: #006aff;
+}
+
+#fascia-loghi a:hover {
+    font-weight: bold;
+    color: #1633ff;
+    text-decoration: none;
+}
+
+/* ANIMAZIONE */
+
+h2 + p {
+    font-size: 24px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    color: #5b6987;
+}
+
+.y_titoletto {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.y_pannelletto {
+    font-weight: bold;
+}
+
+.y_pannelletto > div {
+    border-bottom: 1px solid rgba(3, 27, 78, 0.6);
+}
+
+.y_men-pad {
+    padding: 15px 20px;
+}
+
+
+
+
+
+
+
+@media screen and (min-width: 768px) {
+    .y_pannelletto > div {
+        border-bottom: none ;
+        border-left: 1px solid rgba(3, 27, 78, 0.6);
+    }
+
 }
