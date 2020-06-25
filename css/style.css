@@ -15,6 +15,12 @@ header {
     box-shadow: rgba(3,27,78,0.1) 0px 2px 4px;
 }
 
+footer {
+    background-color: #010e28;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
 #testata {
     height: 800px;
     background-color: #0160ff;
@@ -311,8 +317,38 @@ input[type="password"]:focus {
 }
 
 
-/* CTA BASSA */
+/* FOOTER */
 
+footer li {
+    color: #808794;
+    list-style: none;
+    padding: 5px 0;
+}
+
+footer li:first-child {
+    color: white;
+    margin-bottom: 10px;
+}
+
+footer span {
+    color: #808794;
+}
+
+.y_liste {
+    border-bottom: 1px solid #808794;
+}
+
+.y_loghetti {
+    color: #c1c7d4;
+    font-size: 20px;
+
+}
+
+.y_credits {
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+}
 
 /* INIZIO MEDIA QUERIES */
 @media screen and (min-width: 768px) {
@@ -379,4 +415,14 @@ input[type="password"]:focus {
         padding: 20px;
         font-size: 18px;
     }
+
+    .y_credits {
+        text-align: left;
+    }
+
+    .y_loghetti {
+        text-align: right;
+    }
+
+
 }
