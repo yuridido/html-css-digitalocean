@@ -42,7 +42,8 @@ header {
 }
 
 #destinazioni {
-    height: 800px;
+    padding-top: 60px;
+    padding-bottom: 60px;
     color: white;
     background-color: #031b4e;
     background-image: url('https://images.prismic.io/www-static/bb563ec9-49ef-4ceb-8468-da84f1509fcc_bg-map-solid.svg?auto=compress,format');
@@ -284,10 +285,18 @@ input[type="password"]:focus {
 .y_volo {
     height: 40px;
     line-height: 40px;
-    border-bottom: 1px solid #354971;
 }
 
 .y_voli:last-child {
+    border-bottom: none;
+}
+
+.y_bordo {
+    height: 100%;
+    border-bottom: 1px solid #354971;
+}
+
+.y_volo:last-child .y_bordo {
     border-bottom: none;
 }
 
@@ -312,8 +321,20 @@ input[type="password"]:focus {
         transform: translateY(-50%);
     }
 
+
+
+}
+
+@media screen and (min-width: 992px) {
     .y_volo:nth-child(odd) {
-        margin-right: 5px;
+        padding-right: 10px;
     }
 
+    .y_volo:nth-child(even) {
+        padding-left: 10px;
+    }
+
+    .y_volo:nth-child(12) .y_bordo {
+        border-bottom: none;
+    }
 }
