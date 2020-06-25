@@ -16,6 +16,7 @@ header {
 }
 
 #testata {
+    height: 800px;
     background-color: #0160ff;
     color: white;
     background-image: url('https://www.digitalocean.com/static/bg-home-hero-3-bb4b33b77274db09b969f629ad81c4d5.svg');
@@ -23,8 +24,8 @@ header {
     background-repeat: no-repeat;
     background-position: right;
     margin-top: 60px;
-    padding-top: 120px;
-    padding-bottom: 120px;
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
 
 #fascia-loghi {
@@ -241,6 +242,20 @@ h2 + p {
     .y_pannelletto > div {
         border-bottom: none ;
         border-left: 1px solid rgba(3, 27, 78, 0.6);
+    }
+
+    .Y_text-left-sm {
+        text-align: left;
+    }
+
+    .Y_h800 {
+        height: 800px;
+    }
+
+    .y_middle-center {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
     }
 
 }
