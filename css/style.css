@@ -36,7 +36,8 @@ header {
 
 #animazione,
 #business,
-#carosello {
+#carosello,
+#carosello2 {
     padding-top: 80px;
     padding-bottom: 80px;
 }
@@ -52,7 +53,16 @@ header {
     background-position: center;
 }
 
-
+#cta-bassa {
+    background-color: #0160ff;
+    color: white;
+    background-image: url('https://www.digitalocean.com/static/bg-home-hero-3-bb4b33b77274db09b969f629ad81c4d5.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
 
 h1 {
     font-size: 60px;
@@ -300,6 +310,10 @@ input[type="password"]:focus {
     border-bottom: none;
 }
 
+
+/* CTA BASSA */
+
+
 /* INIZIO MEDIA QUERIES */
 @media screen and (min-width: 768px) {
     .y_pannelletto > div {
@@ -321,20 +335,48 @@ input[type="password"]:focus {
         transform: translateY(-50%);
     }
 
-
-
 }
 
 @media screen and (min-width: 992px) {
     .y_volo:nth-child(odd) {
-        padding-right: 10px;
+        padding-right: 15px;
     }
 
     .y_volo:nth-child(even) {
-        padding-left: 10px;
+        padding-left: 15px;
     }
 
     .y_volo:nth-child(12) .y_bordo {
         border-bottom: none;
+    }
+
+    #cta-bassa {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    .y_floatsx {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+        text-align: left;
+    }
+
+    .y_floatdx {
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+        text-align: right;
+    }
+
+    .y_h200 {
+        height: 200px;
+    }
+
+    #cta-bassa button{
+        padding: 20px;
+        font-size: 18px;
     }
 }
