@@ -24,8 +24,8 @@ header {
     background-repeat: no-repeat;
     background-position: right;
     margin-top: 60px;
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 #fascia-loghi {
@@ -35,9 +35,20 @@ header {
 }
 
 #animazione,
-#business {
+#business,
+#carosello {
     padding-top: 80px;
     padding-bottom: 80px;
+}
+
+#destinazioni {
+    height: 800px;
+    color: white;
+    background-color: #031b4e;
+    background-image: url('https://images.prismic.io/www-static/bb563ec9-49ef-4ceb-8468-da84f1509fcc_bg-map-solid.svg?auto=compress,format');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 
@@ -183,12 +194,16 @@ input[type="password"]:focus {
     margin-bottom: 40px;
 }
 
-#fascia-loghi a {
+#fascia-loghi a,
+#business a,
+#destinazioni p a {
     font-weight: bold;
     color: #006aff;
 }
 
-#fascia-loghi a:hover {
+#fascia-loghi a:hover,
+#business a:hover,
+#destinazioni a:hover {
     font-weight: bold;
     color: #1633ff;
     text-decoration: none;
@@ -196,7 +211,7 @@ input[type="password"]:focus {
 
 /* ANIMAZIONE */
 
-h2 + p {
+#animazione h2 + p {
     font-size: 24px;
     margin-top: 30px;
     margin-bottom: 50px;
@@ -220,10 +235,12 @@ h2 + p {
     padding: 15px 20px;
 }
 
+
 .y_carosello {
     box-shadow: rgba(3,27,78,0.1) 0px 2px 4px;
 }
 
+/* SEZIONE BUSINESS */
 
 #business h2 {
     font-weight: bold;
@@ -236,8 +253,45 @@ h2 + p {
     color: #031b4e;
 }
 
+/* SEZIONE DESTINAZIONI */
+
+#destinazioni h2 + p {
+    font-size: 22px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
 
 
+.y_voli a {
+    font-weight: bold;
+    color: #09c8d2;
+}
+
+.y_voli a:hover {
+    font-weight: bold;
+    color: #1633ff;
+    text-decoration: none;
+}
+
+.y_voli span {
+    font-weight: bold;
+}
+
+.y_voli p {
+    color: #9fa9bc;
+}
+
+.y_volo {
+    height: 40px;
+    line-height: 40px;
+    border-bottom: 1px solid #354971;
+}
+
+.y_voli:last-child {
+    border-bottom: none;
+}
+
+/* INIZIO MEDIA QUERIES */
 @media screen and (min-width: 768px) {
     .y_pannelletto > div {
         border-bottom: none ;
@@ -256,6 +310,10 @@ h2 + p {
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
+    }
+
+    .y_volo:nth-child(odd) {
+        margin-right: 5px;
     }
 
 }
